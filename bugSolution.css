@@ -1,0 +1,19 @@
+/* bugSolution.css */
+
+.my-class {
+  /* Apply styles first, then add other styles that won't conflict */
+  @apply bg-blue-500 p-4;
+  color: white;
+  border-radius: 8px;
+}
+
+/*Alternative: using separate classes for better organization */
+.my-class {
+  @apply bg-blue-500 p-4 rounded-lg; /* Using more concise utility classes */
+}
+
+.my-class-text {
+  color: white;
+}
+
+/*In HTML:  <div class="my-class my-class-text">...</div>*/
